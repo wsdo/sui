@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title></title>
+    </head>
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+
+    <body>
+        <style type="text/css">
+            .infinite-scroll-preloader {
+                margin-top: -20px;
+            }
+
+        </style>
+
+        <header class="bar bar-nav">
+            <h1 class="title">底部无限滚动</h1>
+        </header>
+        <div class="page-group">
+            <div class="page">
+
+                <!-- 工具栏 -->
+                <nav class="bar bar-tab">
+                    <a class="tab-item  active" href="index.html">
+                        <span class="icon icon-home"></span>
+                        <span class="tab-label">首页</span>
+                    </a>
+                    <a class="tab-item" href="view.html">
+                        <span class="icon icon-star"></span>
+                        <span class="tab-label">收藏</span>
+                    </a>
+                    <a class="tab-item external" href="#">
+                        <span class="icon icon-settings"></span>
+                        <span class="tab-label">设置</span>
+                    </a>
+                </nav>
+                <!-- 添加 class infinite-scroll 和 data-distance  向下无限滚动可不加infinite-scroll-bottom类，这里加上是为了和下面的向上无限滚动区分-->
+                <div class="content infinite-scroll infinite-scroll-bottom" data-distance="100">
+                    <div class="list-block">
+                        <ul class="list-container"></ul>
+                    </div>
+                    <!-- 加载提示符 -->
+                    <div class="infinite-scroll-preloader">
+                        <div class="preloader"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="./bundle.js" charset="utf-8"></script>
